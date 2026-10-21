@@ -14,12 +14,32 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      # Top tier: $100+/month, bigger pictures
+      # $500+/month, biggest pictures
+      - uses: JamesIves/github-sponsors-readme-action@v1.6.1
+        with:
+          token: ${{ secrets.SPONSORS_TOKEN }}
+          file: README.md
+          minimum: 50000
+          marker: sponsors-500
+          template: '<a href="https://github.com/{{ login }}"><img src="{{ avatarUrl }}" width="140px" alt="User avatar: {{ name }}" /></a>&nbsp;&nbsp;'
+
+      # $250 to $499.99/month
+      - uses: JamesIves/github-sponsors-readme-action@v1.6.1
+        with:
+          token: ${{ secrets.SPONSORS_TOKEN }}
+          file: README.md
+          minimum: 25000
+          maximum: 49999
+          marker: sponsors-250
+          template: '<a href="https://github.com/{{ login }}"><img src="{{ avatarUrl }}" width="110px" alt="User avatar: {{ name }}" /></a>&nbsp;&nbsp;'
+
+      # $100 to $249.99/month
       - uses: JamesIves/github-sponsors-readme-action@v1.6.1
         with:
           token: ${{ secrets.SPONSORS_TOKEN }}
           file: README.md
           minimum: 10000
+          maximum: 24999
           marker: sponsors-top
           template: '<a href="https://github.com/{{ login }}"><img src="{{ avatarUrl }}" width="80px" alt="User avatar: {{ name }}" /></a>&nbsp;&nbsp;'
 

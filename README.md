@@ -20,14 +20,17 @@ Python · Luau (Roblox) · PowerShell · Git
 ### Sponsors
 [Become a sponsor](https://github.com/sponsors/Rewdzi) at $25+/month and your profile picture is featured here. <!-- goal -->Be the first!<!-- goal -->
 
-<!-- sponsors-top --><!-- sponsors-top -->
-
-<!-- sponsors --><!-- sponsors -->
-
-**Top sponsors ($100+/month)**
-
-<a href="https://github.com/sponsors/Rewdzi"><img src="assets/your-photo-here.svg" width="80px" alt="Your logo, brand or photo here?" /></a>
-
-**Sponsors ($25+/month)**
-
-<a href="https://github.com/sponsors/Rewdzi"><img src="assets/your-photo-here.svg" width="60px" alt="Your logo, brand or photo here?" /></a>
+<table>
+<tr>
+<th>$500+/month</th>
+<th>$250+/month</th>
+<th>$100+/month</th>
+<th>$25+/month</th>
+</tr>
+<tr>
+<td align="center"><!-- sponsors-500 --><!-- sponsors-500 --><a href="https://github.com/sponsors/Rewdzi"><img src="assets/your-photo-here.svg" width="140px" alt="Your logo, brand or photo here?" /></a></td>
+<td align="center"><!-- sponsors-250 --><!-- sponsors-250 --><a href="https://github.com/sponsors/Rewdzi"><img src="assets/your-photo-here.svg" width="110px" alt="Your logo, brand or photo here?" /></a></td>
+<td align="center"><!-- sponsors-top --><!-- sponsors-top --><a href="https://github.com/sponsors/Rewdzi"><img src="assets/your-photo-here.svg" width="80px" alt="Your logo, brand or photo here?" /></a></td>
+<td align="center"><!-- sponsors --><!-- sponsors --><a href="https://github.com/sponsors/Rewdzi"><img src="assets/your-photo-here.svg" width="60px" alt="Your logo, brand or photo here?" /></a></td>
+</tr>
+</table>
