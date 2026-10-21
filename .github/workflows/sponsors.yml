@@ -47,3 +47,13 @@ jobs:
           git add README.md
           git diff --cached --quiet || git commit -m "Update sponsors"
           git push
+
+  # Sponsors in the release notes of every repo
+  releases:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - run: python3 .github/scripts/release-sponsors.py
+        env:
+          SPONSORS_TOKEN: ${{ secrets.SPONSORS_TOKEN }}
+          RELEASES_TOKEN: ${{ secrets.RELEASES_TOKEN }}
