@@ -14,11 +14,23 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
+      # Top tier: $100+/month, bigger pictures
+      - uses: JamesIves/github-sponsors-readme-action@v1.6.1
+        with:
+          token: ${{ secrets.SPONSORS_TOKEN }}
+          file: README.md
+          minimum: 10000
+          marker: sponsors-top
+          template: '<a href="https://github.com/{{ login }}"><img src="{{ avatarUrl }}" width="80px" alt="User avatar: {{ name }}" /></a>&nbsp;&nbsp;'
+
+      # $25 to $99.99/month
       - uses: JamesIves/github-sponsors-readme-action@v1.6.1
         with:
           token: ${{ secrets.SPONSORS_TOKEN }}
           file: README.md
           minimum: 2500
+          maximum: 9999
+          template: '<a href="https://github.com/{{ login }}"><img src="{{ avatarUrl }}" width="60px" alt="User avatar: {{ name }}" /></a>&nbsp;&nbsp;'
 
       # Goal = next multiple of 3 above the $25+ sponsor count (3, 6, 9...)
       - env:
