@@ -22,8 +22,8 @@ Python · Luau (Roblox) · PowerShell · Git
 
 **Top sponsors ($100+/month)**
 
-<!-- sponsors-top --><!-- sponsors-top --><a href="https://github.com/sponsors/Rewdzi"><img src="assets/your-photo-here.svg" width="80px" alt="Your photo here" /></a>
+<!-- sponsors-top --><!-- sponsors-top --><a href="https://github.com/sponsors/Rewdzi"><img src="assets/your-photo-here.svg" width="80px" alt="Your logo here?" /></a>
 
 **Sponsors ($25+/month)**
 
-<!-- sponsors --><!-- sponsors --><a href="https://github.com/sponsors/Rewdzi"><img src="assets/your-photo-here.svg" width="60px" alt="Your photo here" /></a>
+<!-- sponsors --><!-- sponsors --><a href="https://github.com/sponsors/Rewdzi"><img src="assets/your-photo-here.svg" width="60px" alt="Your logo here?" /></a>
