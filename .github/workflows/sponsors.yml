@@ -3,6 +3,8 @@ name: Update sponsors
 on:
   schedule:
     - cron: '0 6 * * *'
+    # Weekly: also update the sponsor goal
+    - cron: '0 7 * * 1'
   workflow_dispatch:
 
 permissions:
@@ -19,6 +21,15 @@ jobs:
           token: ${{ secrets.SPONSORS_TOKEN }}
           file: README.md
           minimum: 2500
+
+      # Goal = next multiple of 3 above the $25+ sponsor count (3, 6, 9...)
+      - if: github.event_name != 'schedule' || github.event.schedule == '0 7 * * 1'
+        env:
+          GH_TOKEN: ${{ secrets.SPONSORS_TOKEN }}
+        run: |
+          count=$(gh api graphql -f query='{ viewer { sponsorshipsAsMaintainer(first: 100, activeOnly: true) { nodes { tier { monthlyPriceInCents } } } } }' --jq '[.data.viewer.sponsorshipsAsMaintainer.nodes[] | select(.tier.monthlyPriceInCents >= 2500)] | length')
+          if [ "$count" -eq 0 ]; then text="Be the first!"; else text="Goal: $count/$(( (count / 3 + 1) * 3 )) sponsors!"; fi
+          sed -i "s|<!-- goal -->.*<!-- goal -->|<!-- goal -->$text<!-- goal -->|" README.md
 
       # Commit as the owner so only Rewdzi shows in Contributors
       - run: |
