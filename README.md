@@ -16,3 +16,6 @@ Python · Luau (Roblox) · PowerShell · Git
 
 ### Support my work
 [Buy me a coffee on Ko-fi](https://ko-fi.com/rewdzi)
+
+### Sponsors
+<!-- sponsors --><!-- sponsors -->

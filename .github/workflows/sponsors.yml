@@ -1,0 +1,30 @@
+name: Update sponsors
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sponsors:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: JamesIves/github-sponsors-readme-action@v1.6.1
+        with:
+          token: ${{ secrets.SPONSORS_TOKEN }}
+          file: README.md
+          minimum: 2500
+          fallback: 'Be the first: [sponsor me](https://github.com/sponsors/Rewdzi)'
+
+      # Commit as the owner so only Rewdzi shows in Contributors
+      - run: |
+          git config user.name "Rewdzi"
+          git config user.email "66337861+Rewdzi@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet || git commit -m "Update sponsors"
+          git push
