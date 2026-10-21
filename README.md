@@ -1,6 +1,6 @@
 ## Hi, I'm Rewdzi
 
-Freelance Forward Deployed Engineer (FDE), open to work.
+Forward Deployed Engineer (FDE), open to work.
 
 ### Open source contributions
 
