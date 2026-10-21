@@ -18,4 +18,6 @@ Python · Luau (Roblox) · PowerShell · Git
 [Buy me a coffee on Ko-fi](https://ko-fi.com/rewdzi)
 
 ### Sponsors
+[Become a sponsor](https://github.com/sponsors/Rewdzi) at $25+/month and your profile picture is featured here.
+
 <!-- sponsors -->Be the first: <a href="https://github.com/sponsors/Rewdzi">sponsor me</a><!-- sponsors -->
