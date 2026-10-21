@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
-  <rect width="160" height="160" rx="12" fill="#6e7681"/>
-  <g text-anchor="middle" dominant-baseline="central" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#ffffff">
+  <rect width="160" height="160" rx="12" fill="#1aadbb"/>
+  <g text-anchor="middle" dominant-baseline="central" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#248da4">
     <text x="80" y="42">Your</text>
     <text x="80" y="78">photo</text>
     <text x="80" y="114">here</text>
