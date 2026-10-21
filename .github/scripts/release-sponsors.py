@@ -15,7 +15,10 @@ QUERY = """{ viewer { sponsorshipsAsMaintainer(first: 100, activeOnly: false) { 
 
 def gh(token, *args):
     env = dict(os.environ, GH_TOKEN=token)
-    return subprocess.run(["gh", *args], check=True, capture_output=True, text=True, env=env).stdout
+    r = subprocess.run(["gh", *args], capture_output=True, text=True, env=env)
+    if r.returncode:
+        sys.exit(f"gh {args[0]} failed: {r.stderr.strip() or r.stdout.strip()}")
+    return r.stdout
 
 
 def pic(s, width):
