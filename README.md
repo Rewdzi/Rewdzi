@@ -13,3 +13,6 @@ Forward Deployed Engineer (FDE), open to work.
 
 ### What I work with
 Python · Luau (Roblox) · PowerShell · Git
+
+### Support my work
+[Buy me a coffee on Ko-fi](https://ko-fi.com/rewdzi)
