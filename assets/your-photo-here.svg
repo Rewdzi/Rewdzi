@@ -2,7 +2,10 @@
   <rect width="160" height="160" rx="12" fill="#1aadbb"/>
   <g text-anchor="middle" dominant-baseline="central" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#ffffff">
     <text x="80" y="42">your</text>
-    <text x="80" y="78">logo</text>
+    <!-- middle word changes every second: logo, brand, photo -->
+    <text x="80" y="78">logo<animate attributeName="opacity" values="1;0;0" keyTimes="0;0.3333;0.6667" calcMode="discrete" dur="3s" repeatCount="indefinite"/></text>
+    <text x="80" y="78" opacity="0">brand<animate attributeName="opacity" values="0;1;0" keyTimes="0;0.3333;0.6667" calcMode="discrete" dur="3s" repeatCount="indefinite"/></text>
+    <text x="80" y="78" opacity="0">photo<animate attributeName="opacity" values="0;0;1" keyTimes="0;0.3333;0.6667" calcMode="discrete" dur="3s" repeatCount="indefinite"/></text>
     <text x="80" y="114">here?</text>
   </g>
 </svg>
