@@ -20,10 +20,14 @@ Python · Luau (Roblox) · PowerShell · Git
 ### Sponsors
 [Become a sponsor](https://github.com/sponsors/Rewdzi) at $25+/month and your profile picture is featured here. <!-- goal -->Be the first!<!-- goal -->
 
+<!-- sponsors-top --><!-- sponsors-top -->
+
+<!-- sponsors --><!-- sponsors -->
+
 **Top sponsors ($100+/month)**
 
-<!-- sponsors-top --><!-- sponsors-top --><a href="https://github.com/sponsors/Rewdzi"><img src="assets/your-photo-here.svg" width="80px" alt="Your logo, brand or photo here?" /></a>
+<a href="https://github.com/sponsors/Rewdzi"><img src="assets/your-photo-here.svg" width="80px" alt="Your logo, brand or photo here?" /></a>
 
 **Sponsors ($25+/month)**
 
-<!-- sponsors --><!-- sponsors --><a href="https://github.com/sponsors/Rewdzi"><img src="assets/your-photo-here.svg" width="60px" alt="Your logo, brand or photo here?" /></a>
+<a href="https://github.com/sponsors/Rewdzi"><img src="assets/your-photo-here.svg" width="60px" alt="Your logo, brand or photo here?" /></a>
